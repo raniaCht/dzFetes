@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'accounts',
     'rest_framework',
     'PartyHall',
-    'corsheaders'
+    'corsheaders',
+    'ServiceOwners',
 ]
 
 MIDDLEWARE = [
