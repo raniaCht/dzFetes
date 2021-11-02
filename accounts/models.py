@@ -14,6 +14,7 @@ class UserAccountManager(BaseUserManager):
         user.save()
 
         return user
+    
 
 class UserAccount(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, unique=True)

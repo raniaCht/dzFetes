@@ -19,7 +19,7 @@ class SignupView(APIView):
             if User.objects.filter(email=email).exists():
                 return Response({'error': 'Email already exists'})
             else:
-                if len(password) < 8:
+                if len(password) < 6:
                     return Response({'error': 'Password must be at least 8 characters'})
                 else:
                     user = User.objects.create_user(email=email, password=password, name=name)
